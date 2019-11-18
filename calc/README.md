@@ -1,9 +1,10 @@
 # PowerCoders
 How-To run:
+```
   npm install
   npm test
   node app
-
+```
   Open browser to localhost:1337
 
 app.js
@@ -11,9 +12,11 @@ app.js
 following HTTP requests.
 
   /
+  
     Serves public/index.html
 
   /calc
+  
     query params: num1, nums2, op
 
       op = add => returns num1 + num2
