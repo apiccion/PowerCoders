@@ -18,13 +18,23 @@
 
             $("form").submit(function(e) {
                 e.preventDefault();
+                op = $("#op").val();
 
                 $.ajax({
                   url: "/calc",
                   data: $(this).serialize(),
                   type: "GET", // if you want to send data via the "data" property change this to "POST". This can be omitted otherwise
                   success: function(responseData) {
-                      $("ans").html($("#num1").val() + " + " + $("#num2").val() + " = " + responseData);
+                      if (op == "add") {
+                          $("ans").html($("#num1").val() + " + " + $("#num2").val() + " = " + responseData);
+                          return;
+                      }
+                      if (op == "mul") {
+                          $("ans").html($("#num1").val() + " * " + $("#num2").val() + " = " + responseData);
+                          return;
+                      }
+
+                      console.error("Unknown op: " + op);
                   },
                   error: console.error
                 });

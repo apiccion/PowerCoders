@@ -8,7 +8,11 @@ function add(a, b) {
 };
 
 function mul(a, b) {
-    // TODO return a multiplied by b.
-   
-    return 0;
+    var ans = 0;
+
+    for (var i = 0; i < parseInt(a); i++) {
+        ans = ans + parseInt(b);
+    }
+
+    return ans;
 }
