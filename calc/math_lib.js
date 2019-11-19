@@ -4,7 +4,7 @@ module.exports = {
 };
 
 function add(a, b) {
-    return parseInt(a) + parseInt(b);
+    return parseFloat(a) + parseFloat(b);
 };
 
 function mul(a, b) {

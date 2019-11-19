@@ -11,6 +11,9 @@ describe('#add()', function() {
     it('2 + -2 = 0', function() {
       assert.equal(math.add("2", "0"), 2);
     })
+    it('3.5 + 2.0 = 5.5', function() {
+      assert.equal(math.add("3.5", "2.0"), 5.5);
+    })
 })
 
 describe('#mul()', function() {
