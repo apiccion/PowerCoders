@@ -4,7 +4,6 @@ How-To run:
   npm install
   npm test
   node app
-```
   Open browser to localhost:1337
 
 app.js
@@ -32,3 +31,4 @@ test_demo/demo[1-3].js
 
 test/math_lib.js
   NodeJS unit tests with Mocha+Chai framework.
+```
