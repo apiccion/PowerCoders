@@ -3,14 +3,13 @@ module.exports = {
     list: list,
 };
 
-
 var usernames = [];
 var passwords = [];
 
 // Passwords requirements:
 //  * 8 characters long
-//  * two numbers
-//  * two special characters
+//  * one numbers
+//  * one special characters
 function create(username, password) {
     if (username.length == 0) {
         return false;
